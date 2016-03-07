@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6bbac01c5a8c731ba8b117f0bc279e8d",
+    "content-hash": "bf9be1541f40e015f09076c1a64880aa",
+    "packages": [
+        {
+            "name": "stefanius/manipulation",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanius/manipulation.git",
+                "reference": "6d429a495ef9ef993066cf83a17361a64ea37a2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanius/manipulation/zipball/6d429a495ef9ef993066cf83a17361a64ea37a2f",
+                "reference": "6d429a495ef9ef993066cf83a17361a64ea37a2f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stefanius\\Manipulation\\": "src/Stefanius/Manipulation/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Stefanius",
+                    "email": "sgrootveld@gmail.com"
+                }
+            ],
+            "description": "Basic classes for manipulate values. You can build your own by inherit this package",
+            "time": "2016-03-07 22:32:37"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}

@@ -2,7 +2,7 @@
 
 namespace Stef\SlugManipulation\Manipulators;
 
-use Stef\Manipulation\Manipulators\AbstractStringManipulator;
+use Stefanius\Manipulation\Manipulators\AbstractStringManipulator;
 
 class SlugManipulator extends AbstractStringManipulator{
     protected function run($string)
