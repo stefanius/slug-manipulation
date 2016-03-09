@@ -1,2 +1,2 @@
-slug-manipulation
+slugifier
 =================
