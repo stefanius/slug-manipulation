@@ -1,9 +1,9 @@
 <?php
 
-namespace Stef\SlugManipulation\Manipulation\Tests\Manipulators;
+namespace Tests\Stefanius\Slugifier\Manipulation\Manipulators;
 
-use Stef\SlugManipulation\Manipulators\FullPathSlugManipulator;
-use Stef\SlugManipulation\Manipulators\SlugManipulator;
+use Stefanius\Slugifier\Manipulators\FullPathSlugManipulator;
+use Stefanius\Slugifier\Manipulators\SlugManipulator;
 
 class FullPathSlugManipulatorTest extends \PHPUnit_Framework_TestCase {
 

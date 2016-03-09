@@ -1,10 +1,16 @@
 <?php
 
-namespace Stef\SlugManipulation\Manipulators;
+namespace Stefanius\Slugifier\Manipulators;
 
 use Stefanius\Manipulation\Manipulators\AbstractStringManipulator;
 
-class SlugManipulator extends AbstractStringManipulator{
+class SlugManipulator extends AbstractStringManipulator
+{
+    /**
+     * @param $string
+     *
+     * @return string
+     */
     protected function run($string)
     {
         $string = iconv('UTF-8', 'ASCII//TRANSLIT', $string);
@@ -16,4 +22,4 @@ class SlugManipulator extends AbstractStringManipulator{
 
         return $string;
     }
-} 
+}

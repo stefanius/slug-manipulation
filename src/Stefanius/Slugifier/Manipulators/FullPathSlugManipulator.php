@@ -1,21 +1,29 @@
 <?php
 
-namespace Stef\SlugManipulation\Manipulators;
+namespace Stefanius\Slugifier\Manipulators;
 
 use Stefanius\Manipulation\Manipulators\AbstractStringManipulator;
 
-class FullPathSlugManipulator extends AbstractStringManipulator{
-
+class FullPathSlugManipulator extends AbstractStringManipulator
+{
     /**
      * @var AbstractStringManipulator
      */
     protected $slugManipulator;
 
+    /**
+     * @param AbstractStringManipulator $manipulator
+     */
     function __construct(AbstractStringManipulator $manipulator)
     {
         $this->slugManipulator = $manipulator;
     }
 
+    /**
+     * @param $string
+     *
+     * @return string
+     */
     protected function run($string)
     {
         $string = trim($string);
@@ -28,4 +36,4 @@ class FullPathSlugManipulator extends AbstractStringManipulator{
 
         return implode('/', $parts);
     }
-} 
+}

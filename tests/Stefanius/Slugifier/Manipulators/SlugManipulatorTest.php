@@ -1,11 +1,11 @@
 <?php
 
-namespace Stef\SlugManipulation\Tests\Manipulators;
+namespace Tests\Stefanius\Slugifier\Manipulators;
 
-use Stef\SlugManipulation\Manipulators\SlugManipulator;
+use Stefanius\Slugifier\Manipulators\SlugManipulator;
 
-class SlugManipulatorTest extends \PHPUnit_Framework_TestCase{
-
+class SlugManipulatorTest extends \PHPUnit_Framework_TestCase
+{
     /**
      * @dataProvider provider
      */
@@ -17,6 +17,9 @@ class SlugManipulatorTest extends \PHPUnit_Framework_TestCase{
         $this->assertEquals($expected, $result);
     }
 
+    /**
+     * @return array
+     */
     public function provider() {
         return [
             ["The Black Lazy Brown Fox!", "the-black-lazy-brown-fox"],
